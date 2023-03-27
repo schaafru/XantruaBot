@@ -1,0 +1,14 @@
+{
+  "name": "xantruabot",
+  "version": "1.0.0",
+  "description": "Twitch bot for Xantrua the cuck",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "schaafru",
+  "license": "ISC",
+  "dependencies": {
+    "tmi.js": "^1.8.5"
+  }
+}
