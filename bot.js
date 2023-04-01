@@ -22,7 +22,7 @@ function onMessageHandler(target, context, msg, self) {
     return;
   }
 
-  const command = msg.trim();
+  const command = msg.trim().toLowerCase();
 
   switch (command) {
     case '!russell':
@@ -40,7 +40,8 @@ function onMessageHandler(target, context, msg, self) {
       say(target, `@${context.username}'s penis length is ${size} ${length}`);
       break;
     case '!derek':
-      const derekPercentage = context.name === 'Zylanth' ? '123%' : `${derek(context.username)}%`;
+      const derekPercentage = context.username === 'zylanth' ? '123%' : `${derek(context.username)}%`;
+      console.log(`@${context.username}`);
       say(target, `@${context.username} is ${derekPercentage} derek HeyGuys`);
       break;
     case '!sweeteggs':
